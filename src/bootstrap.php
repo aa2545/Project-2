@@ -11,8 +11,8 @@ namespace aa2545;
 
 class bootstrap
 {
-    public function__contruct{}
+    public function__contruct()
     {
-        echo "test";
+        echo 'test';
     }
 }
