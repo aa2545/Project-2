@@ -13,6 +13,14 @@ class fileloader
 {
     public function__contruct()
     {
-        echo 'file loader run';
+    $file = fopen(filename:"../data/data.csv", mode:"r")
+
+    while (! feof($file))
+    {
+        $records[] = fgetcsv($file);
+    }
+
+    fclose($file);
+    echo table::table(rows: 'stuff');
     }
 }

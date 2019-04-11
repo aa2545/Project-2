@@ -12,16 +12,12 @@ use aa2545\file\fileloader;
 use aa2545\html\table;
 class bootstrap
 {
-    public function__contruct()
+    public function__contruct(String $filePath)
     {
-        $file = fopen(filename:"../data/data.csv", mode:"r")
+        $records = fileloader($filePath);
 
-        while(! feof($file))
-        {
-            $records[] = fgetcsv($file);
-        }
-
-        fclose($file);
+        print_r (records);
         echo table::table(rows: 'stuff');
+
     }
 }
