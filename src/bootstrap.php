@@ -17,7 +17,11 @@ class bootstrap
     {
         $records = new csvLoad::returnArray($filePath);
 
-        print_r(records);
+        $record = array ('year' => '1975', 'title' => 'hero', 'win' => 'yes');
+
+        $object = factory\recordFactory::create($record);
+
+        print_r($object);
         echo table::table(rows: 'stuff');
 
     }
