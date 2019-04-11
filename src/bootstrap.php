@@ -14,6 +14,7 @@ class bootstrap
 {
     public function__contruct()
     {
+
         echo table::table(rows: 'stuff');
     }
 }
