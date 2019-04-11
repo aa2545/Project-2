@@ -5,11 +5,13 @@
     <title>CSV Import</title>
 </head>
 <body>
+<?php
 
-    <?php $table = new /aa2545/bootstrap
+    use aa2545\bootstrap;
 
-        echo $table;
-    ?>
+    $obj = new bootstrap();
+
+?>
 
 </body>
 </html>
