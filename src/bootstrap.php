@@ -8,11 +8,12 @@
 
 namespace aa2545;
 
-
+use aa2545\file\fileloader;
+use aa2545\html\table;
 class bootstrap
 {
     public function__contruct()
     {
-        $obj = new filelaoder();
+        echo table::table(rows: 'stuff');
     }
 }
