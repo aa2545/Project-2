@@ -6,10 +6,13 @@
  * Time: 12:02 PM
  */
 
-namespace aa2545;
+namespace aa2545\file;
 
 
 class fileloader
 {
-
+    public function__contruct()
+    {
+        echo 'file loader run';
+    }
 }

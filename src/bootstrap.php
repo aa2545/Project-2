@@ -13,6 +13,6 @@ class bootstrap
 {
     public function__contruct()
     {
-        echo 'test';
+        $obj = new filelaoder();
     }
 }
