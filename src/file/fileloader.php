@@ -11,16 +11,16 @@ namespace aa2545\file;
 
 class fileloader
 {
-    public function__contruct()
+    public function returnArray (String $filePath) :array
     {
-    $file = fopen(filename:"../data/data.csv", mode:"r")
+        $file = fopen($filePath, "r");
+        $records = array();
+        while (! feof($file))
+        {
+            $records[] = fgetcsv($file);
+        }
 
-    while (! feof($file))
-    {
-        $records[] = fgetcsv($file);
-    }
-
-    fclose($file);
-    echo table::table(rows: 'stuff');
+        fclose($file);
+        return $records;
     }
 }

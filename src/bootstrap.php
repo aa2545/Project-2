@@ -8,15 +8,16 @@
 
 namespace aa2545;
 
-use aa2545\file\fileloader;
+use aa2545\file\csvLoad;
 use aa2545\html\table;
+
 class bootstrap
 {
-    public function__contruct(String $filePath)
+    public function __contruct(string $filePath)
     {
-        $records = fileloader($filePath);
+        $records = new csvLoad::returnArray($filePath);
 
-        print_r (records);
+        print_r(records);
         echo table::table(rows: 'stuff');
 
     }
