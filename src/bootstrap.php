@@ -13,7 +13,7 @@ use aa2545\html\table;
 
 class bootstrap
 {
-    public function __contruct(string $filePath)
+    public function __construct(string $filePath)
     {
         $records = new csvLoad::returnArray($filePath);
 
